@@ -1,0 +1,10 @@
+SYNTAX SQL SOAL 3 :
+
+SELECT 
+p1.name
+,p2.name
+,hp.price 
+FROM produk1 p1
+INNER JOIN promo p ON p1.id=p.produk1_id
+INNER JOIN produk2 p2 ON p.produk2_id=p2.id
+INNER JOIN hargapromo hp ON p.id=hp.promo_id
